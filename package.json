@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/fowlerbo/employeeTracker/issues"
   },
-  "homepage": "https://github.com/fowlerbo/employeeTracker#readme"
+  "homepage": "https://github.com/fowlerbo/employeeTracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^9.0.0",
+    "mysql2": "^2.3.3"
+  }
 }
