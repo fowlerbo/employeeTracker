@@ -1,32 +1,33 @@
-INSERT INTO department
-    (name)
-VALUES
-    ('Sales & Marketing'),
-    ('Engineering'),
-    ('Finance'),
-    ('Legal');
-
-INSERT INTO role
-    (title, department_id, salary)
-VALUES
-    ('Sales Lead', 1, 100000),
-    ('Salesperson', 1, 80000),
-    ('Lead Engineer', 2, 150000),
-    ('Software Engineer', 2, 120000),
-    ('Account Manager', 3, 160000),
-    ('Accountant', 3, 125000),
-    ('Legal Team Lead', 4, 250000),
-    ('Lawyer', 4, 190000);
-
-INSERT INTO employee
-    (first_name, last_name, role_id, department_id, manager_id)
-VALUES
-    ('Jane', 'Doe', 1, 1, NULL),
-    ('John', 'Doe', 2, 1, 1),
-    ('Bryant', 'Fowler', 3, 2, NULL),
-    ('Labron', 'James', 2, 1, 3),
-    ('Katrina', 'Collins', 5, 3, NULL),
-    ('Mike', 'Lawry', 6, 3, 5),
-    ('Kat', 'Williams', 7, 4, NULL),
-    ('Kevin', 'Hart', 8, 4, 7);
-    
+INSERT INTO department (name)
+VALUES ('Legal'),
+    ('Sales'),
+    ('Engineering');
+INSERT INTO roles (title, salary, department_id)
+VALUES ('Legal Team Lead', 250000, 1),
+    ('Lawyer', 170000, 1),
+    ('Sales Lead', 100000, 2),
+    ('Salesperson', 70000, 2),
+    ('Lead Engineer', 150000, 3),
+    ('Engineer', 120000, 3);
+INSERT INTO employee (
+        first_name,
+        last_name,
+        role_id,
+        manager_id,
+        manager_confirm
+    )
+VALUES ('Jerry', 'Underwood', 1, null, true),
+    ('Bob', 'Sheldon', 2, 1, false),
+    ('Jason', 'Mendoza', 2, 1, false),
+    ('Alex', 'Jackson', 3, null, true),
+    ('Peter', 'Makah', 4, 2, false),
+    ('Suzie', 'Alisson', 4, 2, false),
+    ('John', 'Winger', 4, 2, false),
+    ('Pete', 'McFall', 5, null, true),
+    ('Alexis', 'Caper', 6, 3, false),
+    ('Mason', 'Jacobson', 6, 3, false);
+INSERT INTO manager (first_name, last_name)
+SELECT first_name,
+    last_name
+FROM employee
+WHERE manager_confirm = 1;

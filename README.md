@@ -4,6 +4,8 @@
 
 This app allows employer to be able to view and manage the departments, roles, and employees in my company, so they can be organize and plan there business.
 
+<image src="http://>
+
 # Table of Contents
 
 - User-Story
