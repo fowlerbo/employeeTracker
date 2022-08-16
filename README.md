@@ -22,4 +22,4 @@ This project usage is for anyone that needs to organize their employees and depa
 
 ## Instructions
 
-If you have any further questions please feel free to contact me at [ajcuddeback@gmail.com](fowler1221@gmail.com)
+If you have any further questions please feel free to contact me at [fowler1221@gmail.com]
