@@ -1,64 +1,11 @@
 {
   "name": "employeetracker",
   "version": "1.0.0",
-  "description": "employeetracker",
+  "description": "employee tracker",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "ansi-regex": "^5.0.0",
-    "chalk": "^4.1.0",
-    "chardet": "^0.7.0",
-    "ansi-escapes": "^4.3.1",
-    "cli-cursor": "^3.1.0",
-    "ansi-styles": "^4.3.0",
-    "clone": "^1.0.4",
-    "color-name": "^1.1.4",
-    "console.table": "^0.10.0",
-    "defaults": "^1.0.3",
-    "color-convert": "^2.0.1",
-    "easy-table": "^1.1.0",
-    "denque": "^1.5.0",
-    "emoji-regex": "^8.0.0",
-    "escape-string-regexp": "^1.0.5",
-    "generate-function": "^2.3.1",
-    "iconv-lite": "^0.4.24",
-    "has-flag": "^4.0.0",
-    "external-editor": "^3.1.0",
-    "inquirer": "^7.3.3",
-    "cli-width": "^3.0.0",
-    "is-property": "^1.0.2",
-    "is-fullwidth-code-point": "^3.0.0",
-    "lodash": "^4.17.20",
-    "figures": "^3.2.0",
-    "long": "^4.0.0",
-    "mimic-fn": "^2.1.0",
-    "lru-cache": "^6.0.0",
-    "mute-stream": "^0.0.8",
-    "named-placeholders": "^1.1.2",
-    "mysql2": "^2.2.5",
-    "os-tmpdir": "^1.0.2",
-    "run-async": "^2.4.1",
-    "onetime": "^5.1.2",
-    "rxjs": "^6.6.3",
-    "restore-cursor": "^3.1.0",
-    "seq-queue": "^0.0.5",
-    "pseudomap": "^1.0.2",
-    "safer-buffer": "^2.1.2",
-    "signal-exit": "^3.0.3",
-    "sqlstring": "^2.3.2",
-    "string-width": "^4.2.0",
-    "strip-ansi": "^6.0.0",
-    "supports-color": "^7.2.0",
-    "tmp": "^0.0.33",
-    "tslib": "^1.14.1",
-    "wcwidth": "^1.0.1",
-    "through": "^2.3.8",
-    "yallist": "^4.0.0",
-    "type-fest": "^0.11.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -66,10 +13,15 @@
     "type": "git",
     "url": "git+https://github.com/fowlerbo/employeeTracker.git"
   },
-  "author": "",
+  "author": "Bryant",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fowlerbo/employeeTracker/issues"
   },
-  "homepage": "https://github.com/fowlerbo/employeeTracker#readme"
+  "homepage": "https://github.com/fowlerbo/employeeTracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^9.1.0",
+    "mysql2": "^2.3.3"
+  }
 }
